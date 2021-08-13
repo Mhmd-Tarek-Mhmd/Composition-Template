@@ -1,0 +1,34 @@
+// Footer area
+footer.text-sm-center
+  div(class="container")
+    // [1] Blog
+    .blog
+      h5 Latest From The Blog
+      each div in [0, 1]
+        .post
+          .image #[.img  95 x 95px]
+          .text
+            h6 Metuervestas mus lacinia
+            p Convallisijusto vestas mus pellentum aeneansa pibu lum in aliquam volut pat integest nulla. Acsed sed nunc at fring maurisusce at elis ut vitae laorem.
+
+    // [2] Company Details
+    .details
+      h5 Company Details
+      address= 'Company Name#[br]Street Name & Number#[br]Town#[br]Postcode/Zip'
+      p Tel: xxxxx xxxxxxxxxx#[br]Fax: xxxxx xxxxxxxxxx#[br]Email: #[span.email contact@mydomain.com]
+      p #[span Office Hours:]#[br]Monday - Friday: 08:00 - 17:30#[br]Saturday: 08:00 - 13:00
+
+    // [3] Contact
+    .contact
+      h5 Contact Us
+      input(type="text", name="Name", placeholder="Name")
+      input(type="email", name="Email", placeholder="Email")
+      textarea(name="Message", cols="30", rows="10", placeholder="Message")
+      input(type="submit", class="text-uppercase")
+
+    span.clearfix
+    hr
+    // [4] Copyrights
+    .copy
+      p Copyright © 2013 - All Rights Reserved - Domain Name
+      p Template by OS Templates

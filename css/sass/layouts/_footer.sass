@@ -1,0 +1,82 @@
+footer
+  background-color: #E2E2E2
+  padding: 50px 0 10px
+  overflow: hidden
+  h5
+    color: #333
+    font-size: 16px
+  p, address
+    color: #999
+    font-size: 12px
+  .container > div:not(:last-child)
+    float: left
+  @media (max-width: 767px)
+    .container > div:not(:last-child)
+      width: 100%
+
+  // [1] Blog
+  .blog
+    width: 40%
+    .post
+      margin-bottom: 10px
+      overflow: hidden
+      & > div
+        float: left
+      h6
+        color: $mainColor
+        font-size: 13px
+        margin: 0
+      .text
+        width: calc(100% - 115px)
+        margin-left: 10px
+        line-height: 1.5
+        @media (max-width: 767px)
+          text-align: left
+      .image
+        width: 105px
+        height: 105px
+        line-height: 85px
+        padding: 10px
+        border: 1px solid #8E8F8A
+        background-color: #E2E2E2
+        .img
+          background-color: #333
+          color: #fff
+          text-align: center
+
+  // [2] Company Details
+  .details
+    width: 25%
+    margin: 0 5%
+    .email
+      color: $mainColor
+    p:last-of-type
+      span
+        font-weight: bold
+
+  // [3] Contact
+  .contact
+    width: 25%
+    input, textarea
+      background-color: #fff
+      border-radius: 5px
+      border: none
+      margin-bottom: 5px
+      padding: 5px 10px
+      resize: none
+      width: 100%
+    input[type="submit"]
+      background-color: $mainColor
+      color: #fff
+      width: -moz-fit-content
+      width: fit-content
+
+  // [4] Copyrights
+  .copy
+    p:first-child
+      float: left
+    p:last-child
+      float: right
+    @media (max-width: 767px)
+      p
+        float: none !important

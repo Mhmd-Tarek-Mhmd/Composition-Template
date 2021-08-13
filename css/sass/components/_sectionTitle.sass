@@ -1,0 +1,23 @@
+.section-title
+  position: relative
+  margin: 70px 0
+  h2
+    text-transform: uppercase
+    font-size: 18px
+    color: #fff
+    background-color: $mainColor
+    width: -moz-fit-content
+    width: fit-content
+    padding: 10px
+    border-radius: 9px
+    margin: auto
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+    width: 100%
+    height: 2px
+    background-color: #E2E2E2
+    z-index: -1

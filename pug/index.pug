@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+  head
+    include layouts/meta
+    title Composition Template
+    link(rel="stylesheet", href="css/home.css")
+  body
+    include layouts/nav
+
+    // Shout area
+    div.shout.text-center
+      div(class="container") “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque „
+
+    // Slider area
+    div.slider.text-center
+      div(class="container")
+        .image 960 x 350px
+        .controls
+          - for (let i = 0; i < 10; ++i)
+            span(class= i === 0 && 'active')
+
+    // Services section
+    section.services.text-sm-center
+      div(class="container")
+        .section-title
+          h2 Our Services
+        each span in [0, 1, 2]
+          .service
+            h3 #[span.icon] #[span.title Indonectetus facilis]
+            p Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt.
+            a(href="#") Read More »
+
+    // Team section
+    section.team.text-sm-center
+      div(class="container")
+        .section-title
+          h2 Our players
+        each span in [0, 1, 2, 4]
+          .person
+            div(class="image" style="background: url(img/Face.png) #e2e2e2 no-repeat bottom")
+            h3 #[span.name Name:] #[span.title Jhon Doe]
+            p Justo convallis augue estas aenean elit intesque sed facilispede estibulum nulla.
+            a(href="#") View Profile »
+
+    // Work section
+    section.work.text-center
+      div(class="container")
+        .section-title
+          h2 Latest Work
+        each span in [0, 1, 2]
+          .image 300 x 160px
+
+    include layouts/footer
+    include layouts/scripts

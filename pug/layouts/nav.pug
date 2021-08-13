@@ -1,0 +1,20 @@
+// Nav area
+nav
+  div(class="container")
+    // [1] Logo
+    div(class="logo")
+      h1(class="text-uppercase") Composition
+      p Free Psd Website Template
+    
+    // [2] Mobile Button / Nav
+    button.mobile-btn
+      span
+      span
+      span
+    
+    // [3] Screens Nav
+    ul(class="list-unstyled")
+      each item, index in ['Homepage', 'Style Demo', 'Full Width', 'Dropdown', 'Link Text']
+        li(class= index === 0 && 'active') #[a(href="#") #{item}]
+.clearfix
+hr

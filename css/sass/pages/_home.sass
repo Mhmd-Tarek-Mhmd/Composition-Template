@@ -1,0 +1,122 @@
+// Shout area
+.shout
+  color: #333
+  font-size: 22px
+  padding: 70px 0
+
+// Slider area
+.slider
+  .image
+    background-color: #353535
+    color: $white
+    height: 350px
+    line-height: 350px
+    margin-bottom: 10px
+  .controls
+    span
+      display: inline-block
+      width: 10px
+      height: 10px
+      border: 1px solid #cecece
+      border-radius: 50%
+      background-color: #cecece
+      cursor: pointer
+      &:not(:last-child)
+        margin-right: 5px
+      &:hover, &.active
+        background-color: $white
+
+// Services Section
+.services
+  overflow: hidden
+  .service
+    float: left
+    font-size: 13px
+    width: calc(98% / 3)
+    &:not(:last-child)
+      margin-right: 1%
+    @media (max-width: 767px)
+      width: 100%
+      &:not(:last-child)
+        margin-right: 0
+        margin-bottom: 25px
+
+    h3
+      overflow: hidden
+      @media (max-width: 767px)
+        padding: 0 20px
+        width: -moz-fit-content
+        width: fit-content
+        margin: 0 auto 15px
+      span
+        float: left
+      .icon
+        width: 33px
+        height: 33px
+        background-color: #333
+        margin-right: 5px
+      .title
+        color: #666
+        font-size: 18px
+        line-height: 1.9
+    p
+      color: #979797
+      @media (max-width: 767px)
+        width: 50%
+        margin: 0 auto 10px
+    a
+      color: $mainColor
+
+// Team Section
+.team
+  overflow: hidden
+  .person
+    float: left
+    font-size: 13px
+    width: calc(98% / 4)
+    color: #979797
+    &:not(:last-of-type)
+      margin-right: calc(2% / 3)
+    @media (max-width: 767px)
+      width: 48%
+      &:not(:last-of-type)
+        margin-right: 0
+        margin-bottom: 25px
+      &:not(:nth-of-type(odd))
+        margin-right: 2%
+
+    .image
+      height: 177px
+      text-align: center
+      &::before
+        content: '?'
+        font-size: 100px
+        color: $white
+        line-height: 177px
+      @media (max-width: 767px)
+        margin: auto
+    h3
+      span
+        display: inline-block
+        font-weight: bold
+    a
+      color: $mainColor
+
+// Work Section
+.work
+  padding-bottom: 70px
+  .image
+    background-color: #353535
+    color: $white
+    height: 161px
+    line-height: 161px
+    display: inline-block
+    width: 30%
+    &:not(:last-of-type)
+      margin-right: 4%
+    @media (max-width: 767px)
+      display: block
+      width: 100%
+      &:not(:last-of-type)
+        margin-right: 0
+        margin-bottom: 20px
